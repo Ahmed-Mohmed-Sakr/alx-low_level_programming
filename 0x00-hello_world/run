@@ -1,2 +1,2 @@
 #!/bin/bash
-bash auto-publich-script '0-preprocessor' 'gcc -E main.c -o c' 'script that runs a C file through the preprocessor and save the result into another file.'
+bash auto-publich-script '0-preprocessor' 'gcc -E $CFILE -o c' 'script that runs a C file through the preprocessor and save the result into another file.'
