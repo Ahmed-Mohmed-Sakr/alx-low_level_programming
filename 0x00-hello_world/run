@@ -1,2 +1,2 @@
 #!/bin/bash
-bash auto-publich-script '0-preprocessor' 'gcc -E $CFILE -o c' 'script that runs a C file through the preprocessor and save the result into another file..'
+bash auto-publich-script '2-assembler' 'gcc -C $CFILE -o `echo $CFILE |cut -d. -f1`.s' ' script that generates the assembly code of a C code and save it in an output file.'
