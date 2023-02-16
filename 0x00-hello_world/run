@@ -1,2 +1,2 @@
 #!/bin/bash
-bash auto-publich-script '2-assembler' 'gcc -S $CFILE -o `echo $CFILE |cut -d. -f1`.s' ' script that generates the assembly code of a C code and save it in an output file.'
+bash auto-publich-script '3-name' 'gcc $CFILE -o cisfun' ' script that compiles a C file and creates an executable named cisfun.'
