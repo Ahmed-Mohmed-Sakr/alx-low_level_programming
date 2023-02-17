@@ -22,7 +22,6 @@ int main(void)
 			alp = 'A' - 1;
 		}
 	} while (alp != 'Z');
-	putchar('$');
 	putchar('\n');
 
 	return (0);
