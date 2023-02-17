@@ -17,7 +17,7 @@ int main(void)
 	for (ch1 = 0 ; ch1 <= 9 ; ch1++)
 	{
 		for (ch2 = ch1 + 1 ; ch2 <= 9 ; ch2++)
-
+		{
 			if (c == 1)
 			{
 				putchar(',');
