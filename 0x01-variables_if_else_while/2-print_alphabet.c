@@ -19,7 +19,6 @@ int main(void)
 		putchar(alp);
 
 	} while (alp != 'z');
-
 	putchar('\n');
 
 	return (0);
