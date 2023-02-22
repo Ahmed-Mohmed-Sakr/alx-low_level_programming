@@ -18,11 +18,12 @@ void jack_bauer(void)
 			if (c1 < 10)
 			{
 				_putchar('0');
-				_putchar(c1);
+				_putchar(c1 + '0');
 			}
 			else
 			{
-				_putchar(c1);
+				_putchar((c1 / 10) + '0');
+				_putchar((c1 % 10) + '0');
 			}
 
 			_putchar(':');
@@ -30,11 +31,12 @@ void jack_bauer(void)
 			if (c2 < 10)
 			{
 				_putchar('0');
-				_putchar(c2);
+				_putchar(c2 + '0');
 			}
 			else
 			{
-				_putchar(c2);
+				_putchar((c2 / 10) + '0');
+				_putchar((c2 % 10) + '0');
 			}
 
 			_putchar('\n');
