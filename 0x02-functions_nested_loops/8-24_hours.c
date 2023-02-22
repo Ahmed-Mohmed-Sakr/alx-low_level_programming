@@ -18,23 +18,23 @@ void jack_bauer(void)
 			if (c1 < 10)
 			{
 				_putchar('0');
-				_putchar('0' + ch1);
+				_putchar('0' + c1);
 			}
 			else
 			{
-				_putchar('0' + ch1);
+				_putchar('0' + c1);
 			}
 
 			_putchar(':');
 
-			if (ch2 < 10)
+			if (c2 < 10)
 			{
 				_putchar('0');
-				_putchar('0' + ch2);
+				_putchar('0' + c2);
 			}
 			else
 			{
-				_putchar('0' + ch2);
+				_putchar('0' + c2);
 			}
 
 			_putchar('\n');
