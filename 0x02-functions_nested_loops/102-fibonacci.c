@@ -13,7 +13,7 @@
 
 int main(void)
 {
-	int cur = 2, prv = 1, i, temp;
+	long int cur = 2, prv = 1, i, temp;
 
 	printf("1");
 	for (i = 1 ; i < 50 ; i++)
