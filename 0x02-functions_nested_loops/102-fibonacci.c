@@ -18,7 +18,7 @@ int main(void)
 	printf("1");
 	for (i = 1 ; i < 50 ; i++)
 	{
-		printf(", %d", cur);
+		printf(", %ld", cur);
 		temp = cur;
 		cur += prv;
 		prv = temp;
