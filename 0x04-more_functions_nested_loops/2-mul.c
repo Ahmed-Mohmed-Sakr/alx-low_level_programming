@@ -3,7 +3,8 @@
 /**
  * mul - function that multiplies two integers.
  *
- * @c: input
+ * @a: first number
+ * @b: second number
  *
  * Return: int
  */
