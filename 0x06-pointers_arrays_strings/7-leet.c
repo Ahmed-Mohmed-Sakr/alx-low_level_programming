@@ -20,11 +20,16 @@ char *leet(char *s)
 	int i = 0;
 	int encode[133];
 
-	encode['a'] = encode['A'] = 4;
-	encode['e'] = encode['E'] = 3;
-	encode['o'] = encode['O'] = 0;
-	encode['t'] = encode['T'] = 7;
-	encode['l'] = encode['L'] = 1;
+	encode['a'] = 4;
+	encode['A'] = 4;
+	encode['e'] = 3;
+	encode['E'] = 3;
+	encode['o'] = 0;
+	encode['O'] = 0;
+	encode['t'] = 7;
+	encode['T'] = 7;
+	encode['l'] = 1;
+	encode['L'] = 1;
 
 	while (s[i] != '\0')
 	{
