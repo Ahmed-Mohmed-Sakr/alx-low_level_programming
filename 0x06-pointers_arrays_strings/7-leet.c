@@ -18,18 +18,18 @@
 char *leet(char *s)
 {
 	int i = 0;
-	int encode[133];
+	int encode[150];
 
-	encode['a'] = 4;
-	encode['A'] = 4;
-	encode['e'] = 3;
-	encode['E'] = 3;
-	encode['o'] = 0;
-	encode['O'] = 0;
-	encode['t'] = 7;
-	encode['T'] = 7;
-	encode['l'] = 1;
-	encode['L'] = 1;
+	encode[(int)'a'] = 4;
+	encode[(int)'A'] = 4;
+	encode[(int)'e'] = 3;
+	encode[(int)'E'] = 3;
+	encode[(int)'o'] = 0;
+	encode[(int)'O'] = 0;
+	encode[(int)'t'] = 7;
+	encode[(int)'T'] = 7;
+	encode[(int)'l'] = 1;
+	encode[(int)'L'] = 1;
 
 	while (s[i] != '\0')
 	{
@@ -37,7 +37,7 @@ char *leet(char *s)
 		if (s[i] == 'a' || s[i] == 'A' || s[i] == 'e' || s[i] == 'E' || s[i] == 'o'
 				|| s[i] == 'O' || s[i] == 't' || s[i] == 'T' || s[i] == 'l' || s[i] == 'L')
 		{
-			s[i] = encode[s[i]];
+			s[i] = encode[(int)s[i]];
 		}
 
 		i++;
