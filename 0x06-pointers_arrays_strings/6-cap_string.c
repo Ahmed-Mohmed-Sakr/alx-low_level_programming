@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * cap_string -
+ * cap_string - function that capitalizes all words of a string.
  *
  * @s: string
  *
@@ -12,12 +12,25 @@ char *cap_string(char *s)
 {
 	int i = 0;
 
-	while (s[i])
+	while (s[i] != '\0')
 	{
 		if (s[i] >= 'a' && s[i] <= 'z')
 		{
-			s[i] = s[i] - 32;
+			if (i == 0)
+			{
+				s[i] = s[i] - 32;
+			}
+			else if (s[i - 1] == ' ' || s[i - 1] == '\n' ||
+				 s[i - 1] == ',' || s[i - 1] == ';' ||
+				 s[i - 1] == '.' || s[i - 1] == '!' ||
+				 s[i - 1] == '?' || s[i - 1] == '\"' ||
+				 s[i - 1] == '(' || s[i - 1] == ')' ||
+				 s[i - 1] == '{' || s[i - 1] == '}')
+			{
+				s[i] = s[i] - 32;
+			}
 		}
+		i++;
 	}
 
 	return (s);
