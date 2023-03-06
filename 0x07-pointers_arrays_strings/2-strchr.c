@@ -1,23 +1,27 @@
 #include "main.h"
 
 /**
- * _memset - function that fills memory with a constant byte.
+ * _strchr - function that locates a character in a string.
  *
- * @s: array
- * @b: value to assin to every element
- * @n: array len
+ * @s: array to search in
+ * @c: char to search about
  *
- * Return: array with assained value
+ * Return: string from first match;
  */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_strchr(char *s, char c)
 {
-	unsigned int i;
+	int *p = NULL;
+	int i = 0;
 
-	for (i = 0 ; i < n ; i++)
+	while (s[i] != '\0')
 	{
-		s[i] = b;
+		if (s[i] == c)
+		{
+			p = &s[i];
+			break;
+		}
 	}
 
-	return (s);
+	return (p);
 }
