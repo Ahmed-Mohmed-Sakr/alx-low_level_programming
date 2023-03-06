@@ -25,5 +25,8 @@ char *_strchr(char *s, char c)
 		i++;
 	}
 
+	if (s[i] == c) 
+		p = &s[i];
+
 	return (p);
 }
