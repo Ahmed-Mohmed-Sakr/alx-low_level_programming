@@ -13,7 +13,7 @@
 void print_diagsums(int *a, int size)
 {
 	int i, j;
-	int MDiagonal = 0, PDiagonal = 0;
+	long int MDiagonal = 0, PDiagonal = 0;
 
 	for (i = 0 ; i < size ; i++)
 	{
@@ -26,5 +26,5 @@ void print_diagsums(int *a, int size)
 				PDiagonal += *((a + i * size) + j);
 		}
 	}
-	printf("%d, %d\n", MDiagonal, PDiagonal);
+	printf("%ld, %ld\n", MDiagonal, PDiagonal);
 }
