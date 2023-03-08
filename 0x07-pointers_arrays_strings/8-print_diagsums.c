@@ -20,10 +20,10 @@ void print_diagsums(int *a, int size)
 		for (j = 0 ; j < size ; j++)
 		{
 			if (i == j)
-				MDiagonal += a[i][j];
+				MDiagonal += *((a + i * size) + j);
 
 			if (i + j == size)
-				PDiagonal += a[i][j];
+				PDiagonal += *((a + i * size) + j);
 		}
 	}
 	printf("%d, %d\n", MDiagonal, PDiagonal);
