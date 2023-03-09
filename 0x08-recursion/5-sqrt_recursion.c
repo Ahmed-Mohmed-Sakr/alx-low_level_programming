@@ -19,9 +19,9 @@ int get_sqrt(int n, int begin, int end)
 	else if (begin > end)
 		return (-1);
 	else if (ans > n)
-		get_sqrt(n, begin, mid - 1);
+		return (get_sqrt(n, begin, mid - 1));
 	else
-		get_sqrt(n, mid + 1, end);
+		return (get_sqrt(n, mid + 1, end));
 }
 
 
