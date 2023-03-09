@@ -9,10 +9,10 @@
  *
  * Return: ans
  */
-int get_sqrt(int n, int begin, int end)
+long int get_sqrt(int n, int begin, int end)
 {
-	int mid = begin + (end - begin) / 2;
-	int ans = mid * mid;
+	long int mid = begin + (end - begin) / 2;
+	long int ans = mid * mid;
 
 	if (ans == n)
 		return (mid);
