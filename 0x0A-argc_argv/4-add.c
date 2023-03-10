@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int ans = 0, i;
+	int ans = 0, i, j;
 	(void) argc;
 	(void) argv;
 
@@ -18,15 +18,18 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1 ; i < argc ; i++)
 		{
-			if (isdigit(argv[i][0]))
+			j = 0;
+			while (argv[i][j] != '\0')
 			{
-				ans += atoi(argv[i]);
+				if (isalpha(argv[i][j]))
+				{
+					printf("Error\n");
+					return (1);
+				}
+				j++;
 			}
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
+
+			ans += atoi(argv[i]);
 		}
 	}
 
