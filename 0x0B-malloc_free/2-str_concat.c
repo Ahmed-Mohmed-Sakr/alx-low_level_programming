@@ -6,12 +6,12 @@
  * @s1: first string
  * @s2: second string
  *
- * Return: s1 + s2; 
+ * Return: s1 + s2;
  */
 char *str_concat(char *s1, char *s2)
 {
 	char *s;
-	unsigned int i, len1,len2;
+	unsigned int i, len1, len2;
 
 	if (s1 == NULL && s2 == NULL)
 		return (NULL);
