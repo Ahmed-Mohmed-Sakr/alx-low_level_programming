@@ -19,14 +19,14 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	arr = calloc(width, sizeof(int*));
-	if(arr == NULL)
+	arr = calloc(width, sizeof(int *));
+	if (arr == NULL)
 		return (NULL);
 
 	for (i = 0; i < width; i++)
 	{
 		arr[i] = calloc(height,  sizeof(int));
-		if(arr[i] == NULL)
+		if (arr[i] == NULL)
 			return (NULL);
 	}
 
