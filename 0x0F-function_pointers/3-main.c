@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 	op = argv[2];
 	n2 = atoi(argv[3]);
 
-	if (get_op_func(op) == NULL || op[1] != NULL)
+	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
 		printf("Error\n");
 		return (99);
