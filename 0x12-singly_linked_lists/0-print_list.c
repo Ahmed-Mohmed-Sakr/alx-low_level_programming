@@ -12,11 +12,11 @@
  *
  * Return: list len.
  */
-size_t print_list(const list_t *h)
+size_t print_list(const list_t *head)
 {
 	int len = 0;
 
-	list_t *head = h;
+	//list_t *head = h;
 
 	while (head != NULL)
 	{
