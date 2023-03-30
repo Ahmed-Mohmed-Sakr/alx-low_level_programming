@@ -3,7 +3,7 @@
 /**
  * print_list - function that prints all the elements of a list_t list.
  *
- * @h: head of list
+ * @head: head of list
  *
  * Description:
  * function that prints all the elements of a list_t list.
@@ -15,8 +15,6 @@
 size_t print_list(const list_t *head)
 {
 	int len = 0;
-
-	//list_t *head = h;
 
 	while (head != NULL)
 	{
