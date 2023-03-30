@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list -  function that frees a list_t list.
+ * free_list -  function that frees a list_t list.
  *
  * @head: head of list
  *
