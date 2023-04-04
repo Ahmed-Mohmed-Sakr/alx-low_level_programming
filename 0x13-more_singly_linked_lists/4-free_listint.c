@@ -3,7 +3,7 @@
 /**
  * free_listint -  function that frees a listint_t list.
  *
- * @h: head of list
+ * @head: head of list
  *
  * Return: void
  */
