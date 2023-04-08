@@ -1,6 +1,26 @@
 #include "main.h"
 
 /**
+ * _strlen - get string len.
+ *
+ * @s: string.
+ *
+ * Return: string len.
+ */
+int _strlen(const char *s)
+{
+	int idx = 0;
+
+	while (s[idx] != '\0')
+	{
+		idx++;
+	}
+
+	return (idx);
+}
+
+
+/**
  * binary_to_uint - function that converts a binary number to an unsigned int.
  *
  * @b: string of binary numbers
@@ -15,7 +35,7 @@ unsigned int binary_to_uint(const char *b)
 	if (b == NULL)
 		return (0);
 
-	n = strlen(b);
+	n = _strlen(b);
 	for (i = n - 1 ; i >= 0 ; i++)
 	{
 		if (b[i] == '1')
