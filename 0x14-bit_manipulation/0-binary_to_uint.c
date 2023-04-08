@@ -9,8 +9,8 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int n, x = 1, ans = 0;
-	long int i;
+	unsigned int x = 1, ans = 0;
+	int i, n;
 
 	if (b == NULL)
 		return (0);
@@ -25,5 +25,6 @@ unsigned int binary_to_uint(const char *b)
 
 		x *= 2;
 	}
+
 	return (ans);
 }
