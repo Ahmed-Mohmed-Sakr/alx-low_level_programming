@@ -32,14 +32,15 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int x = 1, ans = 0;
 	int i, n;
 
-	if (b == NULL)
+	n = _strlen(b);
+	if (n == 0)
 		return (0);
 
-	n = _strlen(b);
 	for (i = n - 1 ; i >= 0 ; i++)
 	{
 		if (b[i] == '1')
 			ans += x;
+
 		else if (b[i] != '0')
 			return (0);
 
