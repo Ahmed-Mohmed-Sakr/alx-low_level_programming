@@ -39,7 +39,7 @@ void print_binary(unsigned long int n)
 
 	while (len >= 0)
 	{
-		if ((n & (1llu << len)))
+		if ((n & (1lu << len)))
 			_putchar('1');
 		else
 			_putchar('0');
