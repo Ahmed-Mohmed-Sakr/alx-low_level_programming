@@ -1,14 +1,19 @@
 #include "main.h"
 
 /**
+ * bits_length - get bits len.
+ *
+ * @n: given number.
+ *
+ * Return: number of bits.
  */
 int bits_length(unsigned long int n)
 {
 	int len = 0;
-	
+
 	while (n != 0)
 	{
-		n = (n>>1);
+		n = (n >> 1);
 		len++;
 	}
 	return (len);
@@ -24,18 +29,17 @@ int bits_length(unsigned long int n)
 void print_binary(unsigned long int n)
 {
 	int len;
-	
+
 	if (n == 0)
 	{
 		_putchar('0');
 		return;
 	}
-
 	len = bits_length(n) - 1;
-	
+
 	while (len >= 0)
 	{
-		if((n & (1llu << len)))
+		if ((n & (1llu << len)))
 			_putchar('1');
 		else
 			_putchar('0');
