@@ -66,7 +66,7 @@ int main(int argc, char **argv)
 		else if (rf == -1)
 			dprintf(2, "Error: Can't read from file %s\n", argv[1]), exit(98);
 
-		wf = write(f_to, buff, 1024);
+		wf = write(f_to, buff, rf);
 		if (wf == -1)
 			dprintf(2, "Error: Can't write to %s\n", argv[2]), exit(99);
 	}
