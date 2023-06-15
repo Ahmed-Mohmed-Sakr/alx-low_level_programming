@@ -14,7 +14,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int index, int n)
 {
 	dlistint_t *temp = *h;
 	dlistint_t *new = NULL;
-	unsigned int count = 0;
+	unsigned long int count = 0;
 
 	while (temp)
 	{
