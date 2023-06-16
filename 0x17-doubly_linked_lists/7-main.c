@@ -19,6 +19,10 @@ int main(void)
 	printf("\n-----------------------\n");
 	insert_dnodeint_at_index(&head, 2, 8888);
 	print_dlistint(head);
+
+	printf("\n-----------------------\n");
+	insert_dnodeint_at_index(&head, 2, 8888);
+	print_dlistint(head);
 	
 	free_dlistint(head);
 	head = NULL;
